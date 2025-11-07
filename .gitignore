@@ -1,0 +1,15 @@
+# Node.js dependencies
+#node_modules/
+
+# Logs
+#logs
+#*.log
+
+# Environment variables
+#.env
+
+# System files
+#.DS_Store
+b.	.gitignore
+c.	Plain
+d.	Edit in files•Show inline
