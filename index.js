@@ -1,14 +1,19 @@
-const http = require('http');
-
-const hostname = '127.0.0.1';
+const express = require('express');
+const app = express();
 const port = 3000;
 
-const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello, Greating From Fikiri_Only\n');
+// Home route
+app.get('/', (req, res) => {
+    res.send('Home Page About Fikiri Project');
 });
 
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
+// About route
+app.get('/about', (req, res) => {
+    res.send('About Page');
 });
+
+// Start server
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}`);
+});
+
