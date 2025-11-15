@@ -4,7 +4,7 @@ const port = 3000;
 
 // Home route
 app.get('/', (req, res) => {
-    res.send('Home Page About Fikiri Project');
+    res.send('Home Page About Fikiri Project.');
 });
 
 // About route
